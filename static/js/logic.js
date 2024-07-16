@@ -6,14 +6,14 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-// Function to get color based on magnitude
+// Function to get color based on magnitude 
 function getColor(depth) {
-    return depth > 90 ? '#654c8d' :
-           depth > 70 ? '#8e5a91' :
-           depth > 50 ? '#c46b8f' :
-           depth > 30 ? '#d9828e' :
-           depth > 10 ? '#e8998f' :
-                        '#fbcd9b';
+    return depth > 90 ? '#720000' :
+           depth > 70 ? '#a33d3d' :
+           depth > 50 ? '#ee666e' :
+           depth > 30 ? '#ffa59f' :
+           depth > 10 ? '#f4cccc' :
+                        '#f6d6d6';
 }
 
 // Function to style the bubbles
